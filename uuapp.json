@@ -1,0 +1,20 @@
+{
+  "product": "test_cities_maing01",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "test_cities_maing01-client": {
+    "namespace": "TestCities"
+  },
+  "test_cities_maing01-server": {
+    "devkit": {
+      "development": {
+        "appBoxLocationUri": "----- VALUE REQUIRED -----",
+        "appDeploymentUri": null
+      }
+    }
+  }
+}

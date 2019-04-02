@@ -1,0 +1,128 @@
+{
+  "name": "test_cities_maing01-client",
+  "version": "0.1.0",
+  "description": "",
+  "license": "License Commercial",
+  "namespace": "TestCities",
+  "spec": "uu5-app; uu_appg01@1.1.0",
+  "dependencies": {
+    "create-react-class": "15.6.3",
+    "prop-types": "15.6.1",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "systemjs": "0.19.47",
+    "uu5g04": "^1.0.0",
+    "uu_appg01": "^4.3.0",
+    "uu_appg01_core": "^4.3.0",
+    "uu_appg01_oidc": "^1.0.0",
+    "uu_plus4u5g01": "^2.0.0",
+    "uu5tilesg01": "^3.0.0"
+  },
+  "uuBuildSettings": {
+    "externals": {
+      "systemjs": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/systemjs/${dependencies['systemjs'].version}/",
+        "localBaseUri": "node_modules/systemjs/dist/",
+        "main": "system.src.js",
+        "mainMinified": "system.js"
+      },
+      "react": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/react/${dependencies['react'].version}/",
+        "localBaseUri": "node_modules/react/umd/"
+      },
+      "react-dom": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/react-dom/${dependencies['react-dom'].version}/",
+        "localBaseUri": "node_modules/react-dom/umd/"
+      },
+      "create-react-class": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/create-react-class/${dependencies['create-react-class'].version}/",
+        "localBaseUri": "node_modules/create-react-class/"
+      },
+      "prop-types": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/prop-types/${dependencies['prop-types'].version}/",
+        "localBaseUri": "node_modules/prop-types/"
+      },
+      "uu5g04": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-uu5g04/${dependencies['uu5g04'].version}/",
+        "localBaseUri": "node_modules/uu5g04/dist/"
+      },
+      "uu5g04-bricks": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-uu5g04/${dependencies['uu5g04'].version}/",
+        "localBaseUri": "node_modules/uu5g04/dist/"
+      },
+      "uu5g04-forms": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-uu5g04/${dependencies['uu5g04'].version}/",
+        "localBaseUri": "node_modules/uu5g04/dist/"
+      },
+      "uu_appg01_core": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-appg01-core/${dependencies['uu_appg01_core'].version}/",
+        "localBaseUri": "node_modules/uu_appg01_core/dist/"
+      },
+      "uu_appg01": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-appg01/${dependencies['uu_appg01'].version}/",
+        "localBaseUri": "node_modules/uu_appg01/dist/"
+      },
+      "uu_appg01_oidc": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-appg01-oidc/${dependencies['uu_appg01_oidc'].version}/",
+        "localBaseUri": "node_modules/uu_appg01_oidc/dist/"
+      },
+      "uu_oidcg01": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-appg01-oidc/${dependencies['uu_appg01_oidc'].version}/",
+        "localBaseUri": "node_modules/uu_appg01_oidc/dist/",
+        "main": "uu_appg01_oidc.js",
+        "mainMinified": "uu_appg01_oidc.min.js"
+      },
+      "uu_plus4u5g01": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-plus4u5g01/${dependencies['uu_plus4u5g01'].version}/",
+        "localBaseUri": "node_modules/uu_plus4u5g01/dist/"
+      },
+      "uu_plus4u5g01-bricks": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-plus4u5g01/${dependencies['uu_plus4u5g01'].version}/",
+        "localBaseUri": "node_modules/uu_plus4u5g01/dist/"
+      },
+      "uu_plus4u5g01-app": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-plus4u5g01/${dependencies['uu_plus4u5g01'].version}/",
+        "localBaseUri": "node_modules/uu_plus4u5g01/dist/"
+      },
+      "uu5tilesg01": {
+        "cdnBaseUri": "https://cdn.plus4u.net/uu-uu5tilesg01/${dependencies['uu5tilesg01'].version}/",
+        "localBaseUri": "lib/uu5tilesg01/dist/"
+      },
+      "react-dnd": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/react-dnd/7.0.2/",
+        "main": "ReactDnD.min.js",
+        "mainMinified": "ReactDnD.min.js"
+      },
+      "react-dnd-html5-backend": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/react-dnd-html5-backend/7.0.2/",
+        "main": "ReactDnDHTML5Backend.min.js",
+        "mainMinified": "ReactDnDHTML5Backend.min.js"
+      },
+      "react-dnd-touch-backend": {
+        "cdnBaseUri": "https://cdn.plus4u.net/libs/react-dnd-touch-backend/0.7.1/",
+        "main": "Touch.browserified.js",
+        "mainMinified": "Touch.browserified.js"
+      }
+    }
+  },
+  "devDependencies": {
+    "uu_appg01_devkit": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "clean": "uu_appg01_devkit clean",
+    "test": "uu_appg01_devkit test",
+    "build": "uu_appg01_devkit build",
+    "package": "uu_appg01_devkit package",
+    "dist": "uu_appg01_devkit package",
+    "start": "uu_appg01_devkit start",
+    "prettify": "uu_appg01_devkit prettify",
+    "generate": "uu_appg01_devkit generate"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "private": true
+}

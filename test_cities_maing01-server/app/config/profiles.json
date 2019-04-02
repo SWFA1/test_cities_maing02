@@ -1,0 +1,21 @@
+{
+  "{tid}-{asid}": {
+    "profileList": ["AsidOwner"],
+    "permissionMap": {
+      "{asidOwner}": ["AsidOwner"]
+    },
+    "useCaseMap": {
+    }
+  },
+  "*": {
+    "profileList": ["AwidOwner"],
+    "useCaseMap": {
+      "init": ["AwidOwner"],
+      "createCity": ["Public"],
+      "listCities": ["Public"],
+      "addGrade": ["Public"],
+      "refreshAverageGrade": ["Public"],
+      "defaultUve": ["Public"]
+    }
+  }
+}

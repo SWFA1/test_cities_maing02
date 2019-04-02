@@ -1,0 +1,36 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "init": {
+        "realization": "controllers/CitiesMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "createCity": {
+        "realization": "controllers/CityController.createCity",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "listCities": {
+        "realization": "controllers/CityController.listCities",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "addGrade": {
+        "realization": "controllers/GradeController.addGrade",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "refreshAverageGrade": {
+        "realization": "controllers/GradeController.refreshAverageGrade",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      }
+    }
+  }
+}
