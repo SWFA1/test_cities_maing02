@@ -34,6 +34,8 @@ C:\data md db
 mongod
 ```
 
+- Stáhnout a naistalovat si GUI pro zobrazení dát v databáze např. [Robo 3T](https://robomongo.org/).
+
 - Stáhnout a nainstalovat REST client, např. [Insomnia](https://insomnia.rest/download/).
 
 ## 0.2 Repozitář
@@ -95,6 +97,8 @@ dtoIn = {
   }
 }
 ```
+*[Chyba: Asid has been already initialized.](#Aplikace-je-již-inicializovaná)
+
 ```http request
 http://localhost:8080/test-cities-maing01/00000000000000000000000000000000-11111111111111111111111111111111/sys/initAppWorkspace
 dtoIn = {
@@ -122,6 +126,8 @@ dtoIn = {
 http://localhost:8080/test-cities-maing01/00000000000000000000000000000000-22222222222222222222222222222222/init
 dtoIn = {}
 ```
+*[Chyba: This UC can not be run in the current runtime mode of the application.](#Aplikace-je-v-privilegovaném-módu-a-nejde-ji-již-cez-request-sys/InitApp-nastavit-do-standardního-módu)
+
 # 1. Zadání - Server
 
 Tématem zadání je malá aplikace sloužící k hodnocení měst jejich návštěvníky. Uživatel má možnost zadat vlastní hodnocení města a také si zobrazit seznam měst s jejich hodnocením. Pro přidání hodnocení je připravena funkce addGrade, pro výpis měst pak listCities.  
@@ -258,4 +264,21 @@ git commit -m "T2.2 city-detail"
 **Po dokončení**
 ```git
 git push
+```
+
+# Časté problémy
+
+#### Aplikace je již inicializovaná
+Pokud je odpověď serveru: "Asid has been already initialized." neni již potřeba spouštet request.
+
+#### Aplikace je v privilegovaném módu a nejde ji již cez request sys/InitApp nastavit do standardního módu
+Pro účely přepnutí módu aplikace existuje request sys/setAppRuntimeMode
+
+```http request
+http://localhost:8080/test-cities-maing01/00000000000000000000000000000000-11111111111111111111111111111111/sys/setAppRuntimeMode
+dtoIn = { 
+  { 
+     "mode": "standard"   
+  }
+}
 ```
